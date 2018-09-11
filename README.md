@@ -1,2 +1,2 @@
-# bandz-adios-pantalones
-bandz-adios-pantalones created by GitHub Classroom
+# First group project - Front End - NSS - Cohort E8
+
