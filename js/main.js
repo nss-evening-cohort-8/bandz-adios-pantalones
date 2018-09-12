@@ -4,5 +4,7 @@ const printToDom = (stringToPrint, elementId) => {
 };
 
 let merchData {
-    item1: []
+    item1: [
+        
+    ]
 };
