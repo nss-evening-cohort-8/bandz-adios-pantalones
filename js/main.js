@@ -7,6 +7,7 @@ let merchData {
     item1: [
        {
            name: ''
+           picture: ''
            description: ''
            price: ''
            buy: ''
@@ -15,6 +16,7 @@ let merchData {
     item2: [
         {
             name: ''
+            picture: ''
             description: ''
             price: ''
             buy: ''
@@ -23,6 +25,7 @@ let merchData {
      item3: [
         {
             name: ''
+            picture: ''
             description: ''
             price: ''
             buy: ''
@@ -31,6 +34,7 @@ let merchData {
      item4: [
         {
             name: ''
+            picture: ''
             description: ''
             price: ''
             buy: ''
@@ -39,6 +43,7 @@ let merchData {
      item5: [
         {
             name: ''
+            picture: ''
             description: ''
             price: ''
             buy: ''
