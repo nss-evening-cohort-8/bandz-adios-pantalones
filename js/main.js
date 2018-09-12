@@ -23,3 +23,5 @@ function showDivs(n) {
   }
   newImages[slideIndex-1].style.display = "block";  
 }
+
+/// Media - Album Cover Objects ///

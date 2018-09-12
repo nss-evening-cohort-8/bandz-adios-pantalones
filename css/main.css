@@ -1,35 +1,28 @@
 body{
-    background-color: aqua;
+    background-color #f7f1f3;
 }
 
-/* .media {
-    display: flex;
-    justify-content: center;
-    max-height: 200px;
-    width: auto;
-} */
-
-/* .image-gallery {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    border: 1px solid black;
-    max-height: 200px;
-    width: auto;
-} */
+/* Media Image Gallery and Album Covers  */
 
 .image-gallery{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 60px 0px 100px;
 }
 
 .media-button {
-    background-color: #4CAF50; Green
+    background-color: hotpink;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 15px 15px 15px;
     font-size: 16px;
     border: 1px solid black;
 }
+
+.album-covers {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 50px 0;
+}
+
