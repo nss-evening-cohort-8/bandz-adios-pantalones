@@ -1,4 +1,9 @@
-console.log('Hello');
+
+const printToDom = (stringToPrint, elementId) => {
+    const selectedDiv = document.getElementById(elementId);
+    selectedDiv.innerHTML = stringToPrint;
+}
+
 
 /// Media - Image Gallery ///
 
@@ -17,4 +22,4 @@ function showDivs(n) {
      newImages[i].style.display = "none";  
   }
   newImages[slideIndex-1].style.display = "block";  
-};
+}
