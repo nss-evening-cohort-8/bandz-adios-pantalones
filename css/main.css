@@ -1,11 +1,52 @@
 body{
-    background-color: aqua;
+    background-color: #f7f1f3;
 }
 
 .bio {
-
+   
 }
 
 .bio_list {
-    
+    display: flex;
+    /* border: solid 2px green; */
+    justify-content: space-between;
+    margin-right:50px;
+    margin-left:20px;
+}
+a,
+.maco,
+.robo,
+.chabo {
+    justify-content: center;
+    /* border: solid 3px black; */
+    flex-wrap: wrap;
+    margin-top: 100px; 
+}
+.timbo{
+    justify-content: center;
+    /* border: solid 3px black; */
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.div-waybo {
+    display: flex;
+    border: solid 3px black;
+}
+.waybo{
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: solid 3px black; */
+}
+.p-tag1 {
+   
+}
+.p-tag2 {
+  
+}
+.p-tag3 {
+   
+}
+.p-tag4 {
+  
 }
