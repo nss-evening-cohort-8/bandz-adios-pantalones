@@ -2,6 +2,7 @@ body{
     background-color: #f7f1f3;
 }
 
+/* Beginning NavBar */
 .navBar{
     list-style-type: none;
     margin: 0;
@@ -27,3 +28,4 @@ body{
    background-color: hotpink;
    color: #f7f1f3;
 }
+/* Ending NavBar */
