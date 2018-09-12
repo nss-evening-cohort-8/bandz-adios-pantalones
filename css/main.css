@@ -31,13 +31,20 @@ a,
 
 .div-waybo {
     display: flex;
-    border: solid 3px black;
+    flex-direction: column;
+    margin-right: 100px;
+    /* border: solid 3px black; */
+    
+    
 }
 .waybo{
-    flex-direction: row;
-    justify-content: flex-end;
     /* border: solid 3px black; */
+    align-self: flex-end;
+    transform: rotate(20deg);
+    
 }
+
+
 .p-tag1 {
    
 }
