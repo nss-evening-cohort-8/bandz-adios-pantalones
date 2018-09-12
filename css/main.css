@@ -2,3 +2,34 @@ body{
     background-color: aqua;
 }
 
+/* .media {
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    width: auto;
+} */
+
+/* .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+    max-height: 200px;
+    width: auto;
+} */
+
+.image-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.media-button {
+    background-color: #4CAF50; Green
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: 1px solid black;
+}
