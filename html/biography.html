@@ -7,20 +7,51 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+       <!-- Beginning NavBar -->
+       <nav>
+            <ul class="hpNavBar">
+                <li><a class="hpNavbarLink" href="../index.html">Home</a></li>
+                <li><a class="hpNavbarLink" href="./tour_schedule.html">Tour Schedule</a></li>
+                <li><a class="hpNavbarLink" href="./media.html">Media</a></li>
+                <li><a class="hpNavbarLink" href="./merchandise.html">Merchandise</a></li>
+                <li><a class="hpNavbarLink" href="./biography.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- Ending NavBar -->
+
     <div class="bio">
         <!-- .CSS MAKE THE UL FLEX AND JUSTIFY  CONTENT CENTER -->
         <!-- .CSS FLEX DIRECTION ROW  -->
         <!-- .CSS ALIGN ITEM (LAST) -->
-        <ul class="bio_list">
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li> 
-            <li><img src="" alt=""></li>
-        </ul>
-
+        <div class="bio_list">
+            <a class="maco"><img src="/images/img_BIO/maco2.jpg" width="320" height="320" alt="Maco"></a>
+            <a class="robo"><img src="/images/img_BIO/robo2.jpg" width="320" height="320" alt="Robo"></a>
+            <a class="chabo"><img src="/images/img_BIO/chabo2.jpg" width="320" height="320" alt="Chabo"></a>
+            <a class="timbo"><img src="/images/img_BIO/timbo2.jpg" width="320" height="320" alt="Timbo"></a> 
+            <!-- <a class="bio_a"><img src="/images/img_BIO/waybo.jpg" width="200" height="200" alt="Waybo"></a> -->
+        </div>
+        
+        <div class="bio_list"> 
+            <!-- I think adding an unordered list for each 'p' below for the print to DOM -->
+            <p class="p-tag1">Sample text for Dom</p>
+            <p class="p-tag2">Sample text for Dom again</p>
+            <p class="p-tag3">Sample text for Dom</p>
+            <p class="p-tag4">Sample text for Dom again</p>
+        </div>
+        <div class="div-waybo">
+            <a class="waybo"><img src="/images/img_BIO/waybo2.jpg" width="300" height="300" alt="Waybo"></a> 
+     
+        </div> 
     </div>
-
-    <script src="/js/main.js"></script>
+    <!-- Beginning footer -->
+    <footer class="hpFooterClass">
+            <div class="hpFooterDiv">
+                |<a class="hpFooterLink" href="https://mail.google.com/" target="_blank">Contact</a>
+                |<a class="hpFooterLink" href="./biography.html">About</a>| ©2018
+                <a class="hpFooterLink" href="../index.html">5MEN?</a>|
+            </div>
+        </footer>
+        <!-- Ending footer -->
+    <script src="../js/main.js"></script>
 </body>
 </html>
