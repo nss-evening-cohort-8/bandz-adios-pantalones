@@ -51,8 +51,12 @@ body{
 .album-covers {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 0 50px 0;
     background-color: #f7f1f3;
+}
+
+.songs {
+    display: flex;
+    flex-direction: row;
 }
 
 /* End Media Image Gallery and Albums */
