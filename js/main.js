@@ -1,9 +1,3 @@
-
-const printToDom = (stringToPrint, elementId) => {
-    const selectedDiv = document.getElementById(elementId);
-    selectedDiv.innerHTML = stringToPrint;
-};
-
 const ourAlbums = [
     {
       name: 'My Boo',
@@ -14,14 +8,19 @@ const ourAlbums = [
       songs: [{ id: 3, songTitle: 'hey baby' }, { id: 4, songTitle: 'kiss me twice' }, { id: 5, songTitle: 'cheating wife' }]
     }
   ];
-  
+
   const ourBios = [
     {
       name: 'Marco',
       favSongs: [{ id: 1 }, { id: 3 }, { id: 5 }]
     }
   ];
-  
+
+  const printToDom = (stringToPrint, elementId) => {
+    const selectedDiv = document.getElementById(elementId);
+    selectedDiv.innerHTML = stringToPrint;
+};
+
   function bandBioStringBuilder() {
     let newString = '';
     // Loop through the Bios
@@ -61,12 +60,12 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var newImages = document.getElementsByClassName("media-images");
-  if ( n > newImages.length) {slideIndex = 1}    
+  if ( n > newImages.length) {slideIndex = 1}
   if (n < 1) {slideIndex = newImages.length}
   for (i = 0; i < newImages.length; i++) {
-     newImages[i].style.display = "none";  
+     newImages[i].style.display = "none";
   }
-  newImages[slideIndex-1].style.display = "block";  
+  newImages[slideIndex-1].style.display = "block";
 }
 
 /// End Media Image Gallery ///
