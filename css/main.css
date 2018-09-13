@@ -3,30 +3,28 @@ body {
 }
 
 /* Beginning NavBar */
-.navBar {
+.hpNavBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
   background-color: #f7f1f3;
-  color: black;
+  color: black;}
+
+.hpNavbarLink{
+    color: black;
+    padding: 0px 0px 0px 15px;
+    text-decoration: none;
 }
 
-.navbarLink {
-  color: black;
-  padding: 15px 15px;
-  text-decoration: none;
+.hpNavbarLink:visited {
+  color: hotpink;
 }
 
-.navbarLink:visited{
-    color: hotpink;
-}
-
-.navbarLink:hover {
-  background-color: hotpink;
-  color: #f7f1f3;
-}
+.hpNavbarLink:hover{
+    color: indigo;
+ }
 /* Ending NavBar */
 
 /* Media Image Gallery and Album Covers  */
@@ -53,6 +51,7 @@ body {
     padding: 0 0 50px 0;
     background-color: #f7f1f3;
 }
+
 
 /* End Media Image Gallery and Albums */
 
@@ -128,7 +127,40 @@ a,
   /* border: solid 3px black; */
 }
 
+
+
+
+/* Beginning Footer */
+.hpFooterDiv{
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.hpFooterClass{
+display: flex;
+align-self: flex-end;
+}
+
+.hpFooterLink{
+    padding: 0px 4px;
+text-decoration: none;
+color: black;
+}
+
+.hpFooterLink:visited{
+    color: hotpink;
+}
+
+.hpFooterLink:hover{
+    color: indigo;
+}
+/* Ending Footer */
+
 #ts-body {
   background: url(../images/img_TOUR/Group.jpg);
   background-size: cover;
 }
+
