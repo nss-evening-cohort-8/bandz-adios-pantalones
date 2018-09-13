@@ -15,7 +15,7 @@ body{
 
 .navbarLink{
     color: black;
-    padding: 15px 15px;
+    padding: 0px 0px 0px 15px;
     text-decoration: none;
 }
 
@@ -25,7 +25,35 @@ body{
 }
 
 .navbarLink:hover{
-   background-color: hotpink;
-   color: #f7f1f3;
+   color: indigo;
 }
 /* Ending NavBar */
+
+/* Beginning Footer */
+.footerDiv{
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.footerClass{
+display: flex;
+align-self: flex-end;
+}
+
+.footerLink{
+    padding: 0px 4px;
+text-decoration: none;
+color: black;
+}
+
+.footerLink:visited{
+    color: hotpink;
+}
+
+.footerLink:hover{
+    color: indigo;
+}
+/* Ending Footer */
