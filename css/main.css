@@ -19,7 +19,6 @@ body{
     text-decoration: none;
 }
 
-
 .navbarLink:visited{
     color: hotpink;
 }
@@ -29,10 +28,6 @@ body{
    color: #f7f1f3;
 }
 /* Ending NavBar */
-
-.bio {
-   
-}
 
 .bio_list {
     display: flex;
@@ -61,27 +56,40 @@ a,
     display: flex;
     flex-direction: column;
     margin-right: 100px;
-    /* border: solid 3px black; */
-    
-    
+    /* border: solid 3px black; */ 
 }
 .waybo{
     /* border: solid 3px black; */
     align-self: flex-end;
     transform: rotate(20deg);
-    
+}
+.bio-h1-para,
+.bio-p-tag1,
+.bio-p-tag2,
+.bio-p-tag3,
+.bio-p-tag4{
+    margin-left: 25px;
 }
 
-
-.p-tag1 {
-   
+.bio-para-div{
+    margin-top: -350px;
 }
-.p-tag2 {
-  
+.bio-h1-para {
+    font-size: 70px;
 }
-.p-tag3 {
-   
+.bio-p-tag1 {
+   max-width: 800px;
+   height: auto;
 }
-.p-tag4 {
-  
+.bio-p-tag2 {
+    max-width: 900px;
+    height: auto;
+}
+.bio-p-tag3 {
+    max-width: 1000px;
+    height: auto;
+}
+.bio-p-tag4 {
+    max-width: 1200px;
+    height: auto;
 }
