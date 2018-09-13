@@ -47,7 +47,6 @@ const ourAlbums = [
     }
     printToDom(newString, 'somHTMLElementHere');
   }
-}
 
 
 /// Media - Image Gallery ///

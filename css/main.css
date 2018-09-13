@@ -10,8 +10,7 @@ body {
   display: flex;
   justify-content: flex-end;
   background-color: #f7f1f3;
-  color: black;
-}
+  color: black;}
 
 .hpNavbarLink{
     color: black;
@@ -83,24 +82,49 @@ a,
 }
 
 .div-waybo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    /* border: solid 3px black; */ 
+}
+.waybo{
+    /* border: solid 3px black; */
+    align-self: flex-end;
+    transform: rotate(20deg);
+}
+.bio-h1-para,
+.bio-p-tag1,
+.bio-p-tag2,
+.bio-p-tag3,
+.bio-p-tag4{
+    margin-left: 25px;
+}
+
+.bio-para-div{
+    margin-top: -350px;
+}
+.bio-h1-para {
+    font-size: 70px;
+}
+.bio-p-tag1 {
+   max-width: 800px;
+   height: auto;
+}
+.bio-p-tag2 {
+    max-width: 900px;
+    height: auto;
+}
+.bio-p-tag3 {
+    max-width: 1000px;
+    height: auto;
+}
+.bio-p-tag4 {
+    max-width: 1200px;
+    height: auto;
   display: flex;
   flex-direction: column;
   margin-right: 100px;
   /* border: solid 3px black; */
-}
-.waybo {
-  /* border: solid 3px black; */
-  align-self: flex-end;
-  transform: rotate(20deg);
-}
-
-.p-tag1 {
-}
-.p-tag2 {
-}
-.p-tag3 {
-}
-.p-tag4 {
 }
 
 
