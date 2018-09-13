@@ -4,8 +4,6 @@ const printToDom = (stringToPrint, elementId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-
-
 const ourAlbums = [
     {
       name: 'My Boo',
