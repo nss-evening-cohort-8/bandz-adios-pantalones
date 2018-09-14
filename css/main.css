@@ -33,26 +33,26 @@ body {
 /* Media Image Gallery and Album Covers  */
 
 .image-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 100px;
 }
 
 .media-button {
-    background-color: hotpink;
-    border: none;
-    color: white;
-    padding: 15px 15px 15px 15px;
-    font-size: 16px;
-    border: 1px solid black;
+  background-color: hotpink;
+  border: none;
+  color: white;
+  padding: 15px 15px 15px 15px;
+  font-size: 16px;
+  border: 1px solid black;
 }
 
 .album-covers {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 0 50px 0;
-    background-color: #f7f1f3;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0 50px 0;
+  background-color: #f7f1f3;
 }
 
 
@@ -85,24 +85,49 @@ a,
 }
 
 .div-waybo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    /* border: solid 3px black; */ 
+}
+.waybo{
+    /* border: solid 3px black; */
+    align-self: flex-end;
+    transform: rotate(20deg);
+}
+.bio-h1-para,
+.bio-p-tag1,
+.bio-p-tag2,
+.bio-p-tag3,
+.bio-p-tag4{
+    margin-left: 25px;
+}
+
+.bio-para-div{
+    margin-top: -350px;
+}
+.bio-h1-para {
+    font-size: 70px;
+}
+.bio-p-tag1 {
+   max-width: 800px;
+   height: auto;
+}
+.bio-p-tag2 {
+    max-width: 900px;
+    height: auto;
+}
+.bio-p-tag3 {
+    max-width: 1000px;
+    height: auto;
+}
+.bio-p-tag4 {
+    max-width: 1200px;
+    height: auto;
   display: flex;
   flex-direction: column;
   margin-right: 100px;
   /* border: solid 3px black; */
-}
-.waybo {
-  /* border: solid 3px black; */
-  align-self: flex-end;
-  transform: rotate(20deg);
-}
-
-.p-tag1 {
-}
-.p-tag2 {
-}
-.p-tag3 {
-}
-.p-tag4 {
 }
 
 
