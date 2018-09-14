@@ -49,7 +49,6 @@ const ourAlbums = [
   }
 
 
-
 /// Media - Image Gallery ///
 
 // var slideIndex = 1;
@@ -121,7 +120,7 @@ let merch_data = {
 ///merch string builder function///
 const merch_string_builder = () => {
     let new_string = '';
-    for(let i=0; i<merch_data.items.length; i++){
+    for(let i=0; i<merch_data.items.length; i++){ //this is the for loop that creates the item boxes on the merch page 
         new_string += `<div class="Items">`
         new_string += `<h2>${merch_data.items[i].name}</h2>`
         new_string += `<img src="${merch_data.items[i].picture}"`
@@ -131,7 +130,7 @@ const merch_string_builder = () => {
     }
     printToDom(new_string, 'merch-store');
 };
-merch_string_builder();
+merch_string_builder(); 
 ///end of merch string builder function///
 function showDivs(n) {
   var newImages = document.getElementsByClassName("media-images");
