@@ -11,6 +11,8 @@ body {
   justify-content: flex-end;
   background-color: #f7f1f3;
   color: black;
+  position: fixed;
+  overflow: auto;
 }
 
 .hpNavbarLink{
