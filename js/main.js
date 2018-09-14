@@ -22,7 +22,28 @@ const ourAlbums = [
     }
   ];
   
-  function bandBioStringBuilder() {
+/// Media - Image Gallery ///
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+};
+
+function showDivs(n) {
+  var newImages = document.getElementsByClassName("media-images");
+  if ( n > newImages.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = newImages.length}
+  for (i = 0; i < newImages.length; i++) {
+     newImages[i].style.display = "none";  
+  }
+  newImages[slideIndex-1].style.display = "block";  
+}
+
+/// End Media Image Gallery ///
+
+  function bandBioStringBuilder(dom1) {
     let newString = '';
     // Loop through the Bios
     for (let i = 0; i < ourBios.length; i++) {
@@ -45,27 +66,8 @@ const ourAlbums = [
       // Close up the <ul>
       newString += `</ul>`;
     }
-    printToDom(newString, 'somHTMLElementHere');
+    printToDom(newString, dom1);
   }
 
+bandBioStringBuilder;
 
-/// Media - Image Gallery ///
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-};
-
-function showDivs(n) {
-  var newImages = document.getElementsByClassName("media-images");
-  if ( n > newImages.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = newImages.length}
-  for (i = 0; i < newImages.length; i++) {
-     newImages[i].style.display = "none";  
-  }
-  newImages[slideIndex-1].style.display = "block";  
-}
-
-/// End Media Image Gallery ///

@@ -1,7 +1,11 @@
 body {
   background-color: #f7f1f3;
 }
-
+img {
+    max-width: 1420px;
+    height: auto;
+    margin-top: ;
+}
 /* Beginning NavBar */
 .hpNavBar {
   list-style-type: none;
@@ -56,14 +60,38 @@ body {
 /* End Media Image Gallery and Albums */
 
 .bio {
+    
 }
-
+/* taking out the flex-direction of .div-waybo
+now that it is in the same div as bio-list and adding
+coloum direction to it and the */
 .bio_list {
   display: flex;
-  /* border: solid 2px green; */
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: 50px;
   margin-left: 20px;
+  /* border: 1px solid black; */
+}
+
+
+.div-waybo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: -20;
+    margin-right:50px;
+    padding-bottom: 0;
+    /* margin-right: 100px; */
+    /* z-index: -1; */
+    /* border: solid 3px black;  */
+}
+.waybo{
+    /* border: solid 3px black; */
+    align-self: flex-end;
+    transform: rotate(20deg); 
+    /* border: 1px solid black; */
+ 
 }
 a,
 .maco,
@@ -75,33 +103,39 @@ a,
   margin-top: 100px;
 }
 .timbo {
-  justify-content: center;
+  /* justify-content: center; */
   /* border: solid 3px black; */
-  flex-wrap: wrap;
-  margin-top: 100px;
+  /* flex-wrap: wrap; */
+  /* margin-top: 100px; */
 }
 
-.div-waybo {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    /* border: solid 3px black; */ 
+#dom1 {
+
 }
-.waybo{
-    /* border: solid 3px black; */
-    align-self: flex-end;
-    transform: rotate(20deg);
+#dom2 {
+
 }
+#dom3{
+
+}
+#dom4{
+    
+}
+
 .bio-h1-para,
 .bio-p-tag1,
 .bio-p-tag2,
 .bio-p-tag3,
 .bio-p-tag4{
     margin-left: 25px;
+    /* overflow-wrap: break-word; */
 }
 
 .bio-para-div{
-    margin-top: -350px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: -400px;
 }
 .bio-h1-para {
     font-size: 70px;
@@ -164,3 +198,13 @@ color: black;
   background-size: cover;
 }
 
+@media only screen and (max-width: 1357px) {
+   
+    .bio-para-div {
+        margin-top: 10px;
+    }
+    .div-waybo {
+        
+    }
+
+}
