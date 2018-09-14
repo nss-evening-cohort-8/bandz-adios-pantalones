@@ -178,7 +178,6 @@ const merch_string_builder = () => {
     }
     printToDom(new_string, 'merch-store');
 };
-merch_string_builder(); 
 ///end of merch string builder function///
 function showDivs(n) {
   var newImages = document.getElementsByClassName('media-images');
