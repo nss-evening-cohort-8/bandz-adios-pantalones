@@ -117,7 +117,8 @@ let merch_data = {
         },
     ]
 };
-
+///end of merch object///
+///merch string builder function///
 const merch_string_builder = () => {
     let new_string = '';
     for(let i=0; i<merch_data.items.length; i++){
@@ -130,8 +131,8 @@ const merch_string_builder = () => {
     }
     printToDom(new_string, 'merch-store');
 };
-
 merch_string_builder();
+///end of merch string builder function///
 function showDivs(n) {
   var newImages = document.getElementsByClassName("media-images");
   if ( n > newImages.length) {slideIndex = 1}    
