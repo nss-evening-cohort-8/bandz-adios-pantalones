@@ -260,6 +260,10 @@ const tsStringBuilder = () => {
     newString += `<p>${city}, ${state}</p>`;
     newString += `<p>${venue}</p>`;
     newString += `</div>`;
+    newString += `<div class="ts-show-buttons">`;
+    newString += `<input type="button" value="Buy Tickets">`;
+    newString += `<input type="button" value="V.I.P.">`;
+    newString += `</div>`;
     // newString += `</div>`;
     newString += `</div>`;
   }

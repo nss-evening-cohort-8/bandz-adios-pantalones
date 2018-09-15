@@ -143,41 +143,67 @@ a {
 }
 
 #ts-body {
-  background: url(../images/img_TOUR/Group2.jpg);
+  background-image: url(../images/img_TOUR/Group2.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #ts-container {
   display: flex;
   flex-direction: column;
-  /* margin: 25px 10px 30px 15px; */
   margin-left: 30px;
-  /* margin-bottom: 20%; */
+  padding-top: 35px;
   width: 63%;
-  /* border: 2px solid goldenrod; */
 }
 
 .ts-show {
   display: flex;
-  /* width: 65%; */
-  /* border: 2px solid red; */
   border-bottom: 1px solid grey;
 }
 
 .ts-date-numbers {
+  min-width: 33px;
   margin: 0px 20px;
 }
 
 .ts-date-numbers p {
   font-family: 'Marcellus', serif;
   font-size: 18px;
-  /* margin: 8px; */
+  font-weight: bold;
+}
+
+.ts-date-numbers p:first-of-type {
+  margin-bottom: 9px;
+}
+.ts-date-numbers p:last-of-type {
+  margin-top: 9px;
 }
 
 .ts-venue p {
   font-family: 'Marcellus', serif;
   font-size: 18px;
 }
+
+.ts-venue p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.ts-venue p:last-of-type {
+  margin-top: 9px;
+}
+
+.ts-show-buttons {
+  display: flex;
+  flex-grow: 2;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.ts-show-buttons input {
+  height: 35px;
+}
+
 ul {
   margin-top: -15px;
 }
