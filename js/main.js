@@ -1,4 +1,5 @@
 
+
 const printToDom = (stringToPrint, elementId) => {
   const selectedDiv = document.getElementById(elementId);
   selectedDiv.innerHTML = stringToPrint;
@@ -55,23 +56,7 @@ const printToDom = (stringToPrint, elementId) => {
     showDivs((slideIndex += n));
   }
   
-  function showDivs(n) {
-    var newImages = document.getElementsByClassName('media-images');
-    if (n > newImages.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = newImages.length;
-    }
-    for (i = 0; i < newImages.length; i++) {
-      newImages[i].style.display = 'none';
-    }
-    // BELOW IS WHAT I HAD TO COMMENT OUT FOR MY FUNCTION TO WORK ON 
-    // MY PAGE
-    // newImages[slideIndex - 1].style.display = 'block';
-  }
-
-  /// End Media Image Gallery ///
+ 
 
   // Tour Schedule Array listing current tour dates
   const tourScheduleDates = [
@@ -125,6 +110,24 @@ const printToDom = (stringToPrint, elementId) => {
     }
   ];
   
+  function showDivs(n) {
+    var newImages = document.getElementsByClassName('media-images');
+    if (n > newImages.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = newImages.length;
+    }
+    for (i = 0; i < newImages.length; i++) {
+      newImages[i].style.display = 'none';
+    }
+    // BELOW IS WHAT I HAD TO COMMENT OUT FOR MY FUNCTION TO WORK ON 
+    // MY PAGE
+    // newImages[slideIndex - 1].style.display = 'block';
+  }
+
+  /// End Media Image Gallery ///
+
   function bandBioStringBuilder(bio_name) {
     newString = '';
     for (let i=0;i<ourBios.length;i++){
@@ -167,4 +170,21 @@ const printToDom = (stringToPrint, elementId) => {
   });
 
 
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+  var newImages = document.getElementsByClassName('media-images');
+  if (n > newImages.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = newImages.length;
+  }
+  for (i = 0; i < newImages.length; i++) {
+    newImages[i].style.display = 'none';
+  }
+  newImages[slideIndex - 1].style.display = 'block';
+}
 
