@@ -51,9 +51,9 @@ body {
     background-color: #f7f1f3;
 }
 
-.songs {
+.albumOne {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
 /* End Media Image Gallery and Albums */

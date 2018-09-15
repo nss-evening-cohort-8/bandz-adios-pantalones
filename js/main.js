@@ -160,12 +160,22 @@ const albumOne = () => {
     let songId = ourAlbums[i].songs[t].id;
     let songTitle = ourAlbums[i].songs[t].songTitle;
     newString += `<div class="song">`;
-    newString += `<h1>${songId}</h1>`;
+    // newString += `<h1>${songId}</h1>`;
     newString += `<h1>${songTitle}</h1>`;
-    newString += `</div>`; 
+    // newString += `</div>`; 
   }
 }
   printToDom(newString,'songs');
 };
 
-albumOne ();
+const albumOutput = document.getElementById('album1');
+albumOutput.addEventListener("click", albumOne); 
+
+const albumOutput2 = document.getElementById('album2');
+albumOutput2.addEventListener("click", albumOne); 
+
+const albumOutput3 = document.getElementById('album3');
+albumOutput3.addEventListener("click", albumOne); 
+
+/// End Media Album Function ///
+
