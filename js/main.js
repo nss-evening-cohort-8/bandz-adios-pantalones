@@ -121,11 +121,11 @@ function showDivs() {
     newImages[i].style.display = 'none';
   }
   newImages[slideIndex - 1].style.display = 'block';
-};
+}
 
 function plusDivs(n) {
   showDivs((slideIndex += n));
-};
+}
 /// End Media Image Gallery ///
 
 function bandBioStringBuilder(bio_name) {
@@ -150,29 +150,27 @@ function bandBioStringBuilder(bio_name) {
   printToDom(newString, bio_name);
 }
 
-function bio_func(){  
+function bio_func() {
+  document.getElementById('Maco').addEventListener('click', function() {
+    bandBioStringBuilder('Maco');
+  });
 
-document.getElementById('Maco').addEventListener('click', function() {
-  bandBioStringBuilder('Maco');
-});
+  document.getElementById('Robo').addEventListener('click', function() {
+    bandBioStringBuilder('Robo');
+  });
 
-document.getElementById('Robo').addEventListener('click', function() {
-  bandBioStringBuilder('Robo');
-});
+  document.getElementById('Chabo').addEventListener('click', function() {
+    bandBioStringBuilder('Chabo');
+  });
 
-document.getElementById('Chabo').addEventListener('click', function() {
-  bandBioStringBuilder('Chabo');
-});
+  document.getElementById('Timbo').addEventListener('click', function() {
+    bandBioStringBuilder('Timbo');
+  });
 
-document.getElementById('Timbo').addEventListener('click', function() {
-  bandBioStringBuilder('Timbo');
-});
-
-document.getElementById('waybo').addEventListener('click', function() {
-  bandBioStringBuilder('Waybo');
-});
-};
-
+  document.getElementById('waybo').addEventListener('click', function() {
+    bandBioStringBuilder('Waybo');
+  });
+}
 
 /// Merch - Merchandise Item Object ///
 let merch_data = {
@@ -236,11 +234,15 @@ const merch_string_builder = () => {
     //this is the for loop that creates the item boxes on the merch page
     new_string += `<div class="merch-items">`;
     new_string += `<h2 class="merch-h2">${merch_data.items[i].name}</h2>`;
-    new_string += `<img class="merch-image" src="${merch_data.items[i].picture}" alt="5MEN? Merchandise"`;
+    new_string += `<img class="merch-image" src="${
+      merch_data.items[i].picture
+    }" alt="5MEN? Merchandise"`;
     new_string += `<p class="merch-p">${merch_data.items[i].description}</p>`;
     new_string += `<h3 class="merch-price">${merch_data.items[i].price}</h3>`;
-    new_string += `<button class="merch-button"><h2>${merch_data.items[i].buy}</h2></button>`;
-    new_string += `</div>`
+    new_string += `<button class="merch-button"><h2>${
+      merch_data.items[i].buy
+    }</h2></button>`;
+    new_string += `</div>`;
   }
   printToDom(new_string, 'merch-store');
 };
@@ -260,7 +262,6 @@ const tsStringBuilder = () => {
     let state = tourScheduleDates[i].state;
     let venue = tourScheduleDates[i].venue;
     newString += `<div class="ts-show">`;
-    // newString += `<div class="ts-show-date">`;
     newString += `<div class="ts-date-numbers">`;
     newString += `<p>${month}</p>`;
     newString += `<p>${day}</p>`;
@@ -269,10 +270,12 @@ const tsStringBuilder = () => {
     newString += `<p>${city}, ${state}</p>`;
     newString += `<p>${venue}</p>`;
     newString += `</div>`;
-    // newString += `</div>`;
+    newString += `<div class="ts-show-buttons">`;
+    newString += `<input class="ts-buy" type="button" value="Buy Tickets">`;
+    newString += `<input class="ts-vip" type="button" value="V.I.P. Tickets">`;
+    newString += `</div>`;
     newString += `</div>`;
   }
-  // printToDom(newString, 'ts-show-date-venue');
   printToDom(newString, 'ts-container');
 };
 // End Tour-Schedule \\
@@ -281,10 +284,10 @@ const tsStringBuilder = () => {
 
 const setActive = () => {
   aObj = document.getElementById('nav').getElementsByTagName('a');
-  for(i=0;i<aObj.length;i++) { 
-    if(document.location.href.indexOf(aObj[i].href)>=0) {
-      aObj[i].className='active';
+  for (i = 0; i < aObj.length; i++) {
+    if (document.location.href.indexOf(aObj[i].href) >= 0) {
+      aObj[i].className = 'active';
     }
   }
-}
+};
 // Ending active navbar
