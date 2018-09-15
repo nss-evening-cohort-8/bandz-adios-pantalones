@@ -256,7 +256,7 @@ const tsStringBuilder = () => {
     newString += `<p>${month}</p>`;
     newString += `<p>${day}</p>`;
     newString += `</div>`;
-    newString += `<div class="venue">`;
+    newString += `<div class="ts-venue">`;
     newString += `<p>${city}, ${state}</p>`;
     newString += `<p>${venue}</p>`;
     newString += `</div>`;

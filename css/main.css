@@ -143,15 +143,16 @@ a {
 }
 
 #ts-body {
-  background: url(../images/img_TOUR/Group.jpg);
+  background: url(../images/img_TOUR/Group2.jpg);
   background-size: cover;
 }
 
 #ts-container {
   display: flex;
   flex-direction: column;
+  /* margin: 25px 10px 30px 15px; */
   margin-left: 30px;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
   width: 63%;
   /* border: 2px solid goldenrod; */
 }
@@ -173,7 +174,7 @@ a {
   /* margin: 8px; */
 }
 
-.venue p {
+.ts-venue p {
   font-family: 'Marcellus', serif;
   font-size: 18px;
 }
