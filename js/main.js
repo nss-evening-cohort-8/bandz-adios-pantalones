@@ -81,8 +81,6 @@ const printToDom = (stringToPrint, elementId) => {
   selectedDiv.innerHTML = stringToPrint;
 };
 
-/// Media - Image Gallery ///
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -106,20 +104,6 @@ function showDivs(n) {
 
 /// End Media Image Gallery ///
 
-// const ourAlbums = [
-//     {
-//       name: 'The Secret',
-//       songs: [{ id: 1, songTitle: "when I'm gone" }, { id: 2, songTitle: 'sugar' }, { id: 3, songTitle: 'tootsie' }]
-//     },
-//     {
-//       name: 'Gore',
-//       songs: [{ id: 4, songTitle: 'hey baby' }, { id: 5, songTitle: 'kiss me twice' }, { id: 6, songTitle: 'fantazmo' }]
-//     },
-//     {
-//       name: 'The Pink Album',
-//       songs: [{ id: 7, songTitle: 'pumpkin spice' }, { id: 8, songTitle: 'red balloon' }, { id: 9, songTitle: 'puppies' }]
-//     }
-//   ];
   
 function bandBioStringBuilder() {
   let newString = '';
@@ -148,8 +132,6 @@ function bandBioStringBuilder() {
   }
   printToDom(newString, 'somHTMLElementHere');
 }
-
-
 
 /// Media - Album Function ///
 
