@@ -251,7 +251,6 @@ const tsStringBuilder = () => {
     let state = tourScheduleDates[i].state;
     let venue = tourScheduleDates[i].venue;
     newString += `<div class="ts-show">`;
-    // newString += `<div class="ts-show-date">`;
     newString += `<div class="ts-date-numbers">`;
     newString += `<p>${month}</p>`;
     newString += `<p>${day}</p>`;
@@ -264,10 +263,8 @@ const tsStringBuilder = () => {
     newString += `<input type="button" value="Buy Tickets">`;
     newString += `<input type="button" value="V.I.P.">`;
     newString += `</div>`;
-    // newString += `</div>`;
     newString += `</div>`;
   }
-  // printToDom(newString, 'ts-show-date-venue');
   printToDom(newString, 'ts-container');
 };
 // End Tour-Schedule \\
