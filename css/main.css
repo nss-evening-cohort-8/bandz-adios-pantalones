@@ -1,5 +1,6 @@
 body {
   background-color: #f7f1f3;
+  font-family: 'Marcellus', serif;
 }
 
 img {
@@ -37,11 +38,6 @@ img {
   color: white;
   text-decoration: none;
   background-color: darkslateblue;
-}
-
-navLi{
-  float: left;
-  text-decoration: none;
 }
 
 
