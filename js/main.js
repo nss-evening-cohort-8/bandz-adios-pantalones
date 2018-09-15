@@ -150,26 +150,29 @@ function bandBioStringBuilder(bio_name) {
   printToDom(newString, bio_name);
 }
 
-// YES I AM GOING TO WORK THESE BELOW INTO ONE FUNCTION
-// document.getElementById('Maco').addEventListener('click', function() {
-//   bandBioStringBuilder('Maco');
-// });
+function bio_func(){  
 
-// document.getElementById('Robo').addEventListener('click', function() {
-//   bandBioStringBuilder('Robo');
-// });
+document.getElementById('Maco').addEventListener('click', function() {
+  bandBioStringBuilder('Maco');
+});
 
-// document.getElementById('Chabo').addEventListener('click', function() {
-//   bandBioStringBuilder('Chabo');
-// });
+document.getElementById('Robo').addEventListener('click', function() {
+  bandBioStringBuilder('Robo');
+});
 
-// document.getElementById('Timbo').addEventListener('click', function() {
-//   bandBioStringBuilder('Timbo');
-// });
+document.getElementById('Chabo').addEventListener('click', function() {
+  bandBioStringBuilder('Chabo');
+});
 
-// document.getElementById('waybo').addEventListener('click', function() {
-//   bandBioStringBuilder('Waybo');
-// });
+document.getElementById('Timbo').addEventListener('click', function() {
+  bandBioStringBuilder('Timbo');
+});
+
+document.getElementById('waybo').addEventListener('click', function() {
+  bandBioStringBuilder('Waybo');
+});
+};
+
 
 /// Merch - Merchandise Item Object ///
 let merch_data = {
