@@ -183,7 +183,7 @@ let merch_data = {
       description:
         'This bottle of inspiration might be empty, but it can filled with your hopes and dreams!  All your hopes and dreams can smell just like our inspiration!',
       price: '₩5000 / $5.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     },
     {
       name: 'Stained Pillow',
@@ -191,7 +191,7 @@ let merch_data = {
       description:
         'This pillow is stained with all the colors of our love.  Each pillow is unique to a band member and has been carefully prepared over several weeks.  Supplies are limited!',
       price: '₩599000 / $599.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     },
     {
       name: 'Flavor Infused Plate',
@@ -199,7 +199,7 @@ let merch_data = {
       description:
         'Paper plates are bad for the environment.  So we buy single use ceramic plates, and once we’re done, sell them to you at a huge discount!  Each plate is flavored to a recent meal of one of our bandmates.',
       price: '₩59000 / $59.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     },
     {
       name: 'Dulled Razor',
@@ -207,7 +207,7 @@ let merch_data = {
       description:
         'These are the actual razors the band uses to shave their legs!  Each razor represents months of daily shaving.  Great for children!',
       price: '₩16000 / $16.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     },
     {
       name: 'Bar Soap',
@@ -215,15 +215,15 @@ let merch_data = {
       description:
         'This was a puddle of liquid soap that sat too long.  We call it bar soap because we found it on the floor of a bar! Bonus: may contain unknown scents!',
       price: '₩29000 / $29.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     },
     {
       name: 'Community Toothbrush',
       picture: '../images/img_MERCH/tooth.jpg',
       description:
-        'We take out teeth hygiene very seriously.  So should you!  Our advice:  Don’t use and ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
+        'We take out teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
       price: '₩29000 / $29.99',
-      buy: 'BUY'
+      buy: 'BUY NOW!!'
     }
   ]
 };
@@ -234,12 +234,13 @@ const merch_string_builder = () => {
   let new_string = '';
   for (let i = 0; i < merch_data.items.length; i++) {
     //this is the for loop that creates the item boxes on the merch page
-    new_string += `<div class="Items">`;
-    new_string += `<h2>${merch_data.items[i].name}</h2>`;
-    new_string += `<img src="${merch_data.items[i].picture}"`;
-    new_string += `<p>${merch_data.items[i].description}</p>`;
-    new_string += `<h3>${merch_data.items[i].price}</h3>`;
-    new_string += `<button>${merch_data.items[i].buy}</button>`;
+    new_string += `<div class="merch-items">`;
+    new_string += `<h2 class="merch-h2">${merch_data.items[i].name}</h2>`;
+    new_string += `<img class="merch-image" src="${merch_data.items[i].picture}" alt="5MEN? Merchandise"`;
+    new_string += `<p class="merch-p">${merch_data.items[i].description}</p>`;
+    new_string += `<h3 class="merch-price">${merch_data.items[i].price}</h3>`;
+    new_string += `<button class="merch-button"><h2>${merch_data.items[i].buy}</h2></button>`;
+    new_string += `</div>`
   }
   printToDom(new_string, 'merch-store');
 };
