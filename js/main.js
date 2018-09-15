@@ -63,7 +63,7 @@ const tourScheduleDates = [
     date: 1530939600000,
     city: 'Whynot',
     state: 'NC',
-    venue: '',
+    venue: "Hurricane's Eye Saloon",
     isSoldOut: 'false'
   },
   {
@@ -112,7 +112,7 @@ function bandBioStringBuilder() {
 /// Media - Image Gallery ///
 
 var slideIndex = 1;
-showDivs(slideIndex);
+// showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs((slideIndex += n));
@@ -133,3 +133,33 @@ function showDivs(n) {
 }
 
 /// End Media Image Gallery ///
+
+// Start Tour-Schedule \\
+const tsStringBuilder = () => {
+  let newString = '';
+  for (let i = 0; i < tourScheduleDates.length; i++) {
+    let tourDate = new Date(tourScheduleDates[i].date);
+    let locale = window.navigator.language;
+    let month = tourDate.toLocaleDateString(locale, {
+      month: 'short'
+    });
+    let day = tourDate.getDate();
+    let city = tourScheduleDates[i].city;
+    let state = tourScheduleDates[i].state;
+    let venue = tourScheduleDates[i].venue;
+    newString += `<div class="ts-show">`;
+    // newString += `<div class="ts-show-date">`;
+    newString += `<div class="ts-date-numbers">`;
+    newString += `<p>${month}</p>`;
+    newString += `<p>${day}</p>`;
+    newString += `</div>`;
+    newString += `<div class="venue">`;
+    newString += `<p>${city}, ${state}</p>`;
+    newString += `<p>${venue}</p>`;
+    newString += `</div>`;
+    // newString += `</div>`;
+    newString += `</div>`;
+  }
+  // printToDom(newString, 'ts-show-date-venue');
+  printToDom(newString, 'ts-container');
+};
