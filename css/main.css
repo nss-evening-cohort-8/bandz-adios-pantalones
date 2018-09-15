@@ -24,6 +24,7 @@ img {
   position: fixed;
   overflow: hidden;
   width: 97%;
+  z-index: 3000;
 }
 
 .hpNavbarLink {
