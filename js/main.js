@@ -221,7 +221,7 @@ let merch_data = {
       name: 'Community Toothbrush',
       picture: '../images/img_MERCH/tooth.jpg',
       description:
-        'We take out teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
+        'We take our teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
       price: '₩29000 / $29.99',
       buy: 'BUY NOW!!'
     }
