@@ -10,7 +10,7 @@ img {
   /* margin-top: ; */
 }
 
-.hpBody{
+.hpBody {
   background-image: url(/images/img_HOME/home1.jpg);
   background-size: 97%;
 }
@@ -35,7 +35,7 @@ img {
   color: hotpink;
 }
 
-.hpAboutUs{
+.hpAboutUs {
   margin-right: 40px;
 }
 
@@ -50,7 +50,6 @@ img {
   background-color: darkslateblue;
 }
 
-
 /* Ending NavBar */
 
 /* Beginning active navbar */
@@ -62,7 +61,6 @@ ul#nav li a.active {
   margin-right: 40px;
 }
 /* Ending active navbar */
-
 
 /* Media Image Gallery and Album Covers  */
 
@@ -83,23 +81,23 @@ ul#nav li a.active {
 }
 
 .album-covers {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f7f1f3;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f7f1f3;
 }
 
 .albumOne {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .songs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 175px 0 135px;
-    text-align: center;
-    font-family: 'Marcellus SC', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 175px 0 135px;
+  text-align: center;
+  font-family: 'Marcellus SC', serif;
 }
 
 /* End Media Image Gallery and Albums */
@@ -179,41 +177,96 @@ ul#nav li a.active {
 }
 
 #ts-body {
-  background: url(../images/img_TOUR/Group2.jpg);
+  background-image: url(../images/img_TOUR/Group2.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #ts-container {
   display: flex;
   flex-direction: column;
-  /* margin: 25px 10px 30px 15px; */
   margin-left: 30px;
-  /* margin-bottom: 20%; */
+  padding-top: 60px;
   width: 63%;
-  /* border: 2px solid goldenrod; */
 }
 
 .ts-show {
   display: flex;
-  /* width: 65%; */
-  /* border: 2px solid red; */
   border-bottom: 1px solid grey;
 }
 
 .ts-date-numbers {
+  min-width: 33px;
   margin: 0px 20px;
 }
 
 .ts-date-numbers p {
   font-family: 'Marcellus', serif;
   font-size: 18px;
-  /* margin: 8px; */
+  font-weight: bold;
+}
+
+.ts-date-numbers p:first-of-type {
+  margin-bottom: 9px;
+}
+.ts-date-numbers p:last-of-type {
+  margin-top: 9px;
 }
 
 .ts-venue p {
   font-family: 'Marcellus', serif;
   font-size: 18px;
 }
+
+.ts-venue p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.ts-venue p:last-of-type {
+  margin-top: 9px;
+}
+
+.ts-show-buttons {
+  display: flex;
+  flex-grow: 2;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.ts-buy {
+  margin-right: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 25px 0px 25px 0px;
+  box-shadow: none;
+  background-color: hotpink;
+  color: #f7f1f3;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Marcellus', serif;
+}
+.ts-buy:hover {
+  background-color: darkslateblue;
+}
+
+.ts-vip {
+  margin-left: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 0px 25px 0px 25px;
+  box-shadow: none;
+  background-color: hotpink;
+  color: #f7f1f3;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Marcellus', serif;
+}
+
+.ts-vip:hover {
+  background-color: darkslateblue;
+}
+
 ul {
   margin-top: -15px;
 }
@@ -240,11 +293,10 @@ li {
   font-weight: bold;
 }
 
-.hpFootDiv{
+.hpFootDiv {
   color: white;
   height: 100%;
 }
-
 
 .hpFooterClass {
   display: flex;
@@ -265,7 +317,7 @@ li {
   color: hotpink;
 }
 
-.hpFootLink{
+.hpFootLink {
   padding: 0px 4px;
   text-decoration: none;
   color: pink;
@@ -279,7 +331,7 @@ li {
   color: pink;
 }
 /* Ending Footer */
- 
+
 #merch-store {
   display: flex;
   flex-wrap: wrap;
@@ -297,23 +349,23 @@ li {
   box-sizing: border-box;
   justify-content: center;
   margin-bottom: 80px;
- }
+}
 
- .merch-h2 {
-   height: 30px;
-   width: 100%;
-   margin: 0 auto;
- }
+.merch-h2 {
+  height: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
 
- .merch-image {
-   max-width: 100%;
-   max-height: 100%;
-   margin: auto;
- }
+.merch-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
 
- .merch-price {
-   width: 100%;
- }
+.merch-price {
+  width: 100%;
+}
 
 .merch-button {
   width: 200px;
