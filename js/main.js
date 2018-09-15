@@ -226,12 +226,13 @@ const merch_string_builder = () => {
   let new_string = '';
   for (let i = 0; i < merch_data.items.length; i++) {
     //this is the for loop that creates the item boxes on the merch page
-    new_string += `<div class="Items">`;
-    new_string += `<h2>${merch_data.items[i].name}</h2>`;
-    new_string += `<img src="${merch_data.items[i].picture}"`;
-    new_string += `<p>${merch_data.items[i].description}</p>`;
-    new_string += `<h3>${merch_data.items[i].price}</h3>`;
-    new_string += `<button>${merch_data.items[i].buy}</button>`;
+    new_string += `<div class="merch-items">`;
+    new_string += `<h2 class="merch-h2">${merch_data.items[i].name}</h2>`;
+    new_string += `<img class="merch-image" src="${merch_data.items[i].picture}" alt="5MEN? Merchandise"`;
+    new_string += `<p class="merch-p">${merch_data.items[i].description}</p>`;
+    new_string += `<h3 class="merch-h3">${merch_data.items[i].price}</h3>`;
+    new_string += `<button class="merch-button">${merch_data.items[i].buy}</button>`;
+    new_string += `</div>`
   }
   printToDom(new_string, 'merch-store');
 };

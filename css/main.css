@@ -221,3 +221,25 @@ li {
   color: indigo;
 }
 /* Ending Footer */
+ 
+#merch-store {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.merch-items {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  max-width: 33%;
+  min-width: 33%;
+  text-align: center;
+ }
+
+ .merch-h2 {
+   border: 2px solid black;
+   height: 30px;
+   margin: 0 auto;
+ }
+
