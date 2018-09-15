@@ -72,10 +72,23 @@ ul#nav li a.active {
 }
 
 .album-covers {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 0 50px 0;
-  background-color: #f7f1f3;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f7f1f3;
+}
+
+.albumOne {
+    display: flex;
+    justify-content: center;
+}
+
+.songs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 175px 0 135px;
+    text-align: center;
+    font-family: 'Marcellus SC', serif;
 }
 
 /* End Media Image Gallery and Albums */

@@ -1,6 +1,6 @@
 const ourAlbums = [
   {
-    name: 'My Boo',
+    name: 'The Secret',
     songs: [
       { id: 0, songTitle: "When I'm Gone" },
       { id: 1, songTitle: 'Sugar' },
@@ -8,11 +8,19 @@ const ourAlbums = [
     ]
   },
   {
-    name: 'Bingo',
+    name: 'Gore',
     songs: [
       { id: 3, songTitle: 'Hey Baby' },
       { id: 4, songTitle: 'Kiss Me Twice' },
       { id: 5, songTitle: 'Cheating Wife' }
+    ]
+  },
+  {
+    name: 'Pink Album',
+    songs: [
+      { id: 3, songTitle: 'Sweet' },
+      { id: 4, songTitle: 'Watch out!' },
+      { id: 5, songTitle: 'Back to K-Town' }
     ]
   }
 ];
@@ -99,28 +107,25 @@ const printToDom = (stringToPrint, elementId) => {
 
 /// Media - Image Gallery ///
 var slideIndex = 1;
-//showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
+function showDivs() {
+  // var slideIndex = 1;
   var newImages = document.getElementsByClassName('media-images');
-  if (n > newImages.length) {
+  if (slideIndex > newImages.length) {
     slideIndex = 1;
   }
-  if (n < 1) {
+  if (slideIndex < 1) {
     slideIndex = newImages.length;
   }
   for (i = 0; i < newImages.length; i++) {
     newImages[i].style.display = 'none';
   }
-  // BELOW IS WHAT I HAD TO COMMENT OUT FOR MY FUNCTION TO WORK ON
-  // MY PAGE
-  // newImages[slideIndex - 1].style.display = 'block';
-}
+  newImages[slideIndex - 1].style.display = 'block';
+};
 
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+};
 /// End Media Image Gallery ///
 
 function bandBioStringBuilder(bio_name) {
@@ -145,26 +150,29 @@ function bandBioStringBuilder(bio_name) {
   printToDom(newString, bio_name);
 }
 
-// YES I AM GOING TO WORK THESE BELOW INTO ONE FUNCTION
-// document.getElementById('Maco').addEventListener('click', function() {
-//   bandBioStringBuilder('Maco');
-// });
+function bio_func(){  
 
-// document.getElementById('Robo').addEventListener('click', function() {
-//   bandBioStringBuilder('Robo');
-// });
+document.getElementById('Maco').addEventListener('click', function() {
+  bandBioStringBuilder('Maco');
+});
 
-// document.getElementById('Chabo').addEventListener('click', function() {
-//   bandBioStringBuilder('Chabo');
-// });
+document.getElementById('Robo').addEventListener('click', function() {
+  bandBioStringBuilder('Robo');
+});
 
-// document.getElementById('Timbo').addEventListener('click', function() {
-//   bandBioStringBuilder('Timbo');
-// });
+document.getElementById('Chabo').addEventListener('click', function() {
+  bandBioStringBuilder('Chabo');
+});
 
-// document.getElementById('waybo').addEventListener('click', function() {
-//   bandBioStringBuilder('Waybo');
-// });
+document.getElementById('Timbo').addEventListener('click', function() {
+  bandBioStringBuilder('Timbo');
+});
+
+document.getElementById('waybo').addEventListener('click', function() {
+  bandBioStringBuilder('Waybo');
+});
+};
+
 
 /// Merch - Merchandise Item Object ///
 let merch_data = {
@@ -268,22 +276,7 @@ const tsStringBuilder = () => {
 };
 // End Tour-Schedule \\
 
-// Attempting active navbar
-// let hpNavCont = document.getElementById("nav");
-// let hpNav = hpNavCont.getElementsByClassName("hpNavbarLink");
-
-// let navFunction = () => {
-//   let sheet = document.getElementsByClassName("active");
-//   sheet[0].className = sheet[0].className.replace(" active", "");
-//   if (sheet.length>0){
-//     sheet[0].className = sheet[0].className.replace(" active","");
-//   }
-//   this.className += " active";
-// };
-
-// for (let i=0; i<hpNav.length; i++){
-//   hpNav[i].addEventListener("click",navFunction());
-// }
+// Starting active navbar
 
 const setActive = () => {
   aObj = document.getElementById('nav').getElementsByTagName('a');
