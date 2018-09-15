@@ -1,5 +1,6 @@
 body {
   background-color: #f7f1f3;
+  font-family: 'Marcellus', serif;
 }
 
 img {
@@ -9,33 +10,59 @@ img {
   /* margin-top: ; */
 }
 
+.hpBody{
+  background-image: url(/images/img_HOME/home1.jpg);
+  background-size: 97%;
+}
 /* Beginning NavBar */
 .hpNavBar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 2px;
   display: flex;
-  justify-content: flex-end;
-  background-color: #f7f1f3;
-  color: black;
+  justify-content: space-between;
+  background-color: black;
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
+  width: 97%;
+  z-index: 3000;
 }
 
 .hpNavbarLink {
-  color: black;
-  padding: 0px 0px 0px 15px;
+  display: block;
+  padding: 8px;
+  background-color: black;
   text-decoration: none;
+  color: hotpink;
+}
+
+.hpAboutUs{
+  margin-right: 40px;
 }
 
 .hpNavbarLink:visited {
   color: hotpink;
+  text-decoration: none;
 }
 
 .hpNavbarLink:hover {
-  color: indigo;
+  color: white;
+  text-decoration: none;
+  background-color: darkslateblue;
 }
+
+
 /* Ending NavBar */
+
+/* Beginning active navbar */
+ul#nav li a.active {
+  background-color: #f7f1f3;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  margin-right: 40px;
+}
+/* Ending active navbar */
+
 
 /* Media Image Gallery and Album Covers  */
 
@@ -105,18 +132,14 @@ img {
   margin-bottom: -20;
   margin-right: 50px;
   padding-bottom: 0;
+  padding-top: 20px;
 }
 #Waybo {
   align-self: flex-end;
   transform: rotate(20deg);
   padding-left: -30px;
   z-index: 500;
-}
-
-a {
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 100px;
+  padding-top: 20px;
 }
 
 .bio-h1-para,
@@ -238,8 +261,16 @@ li {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  align-self: flex-end;
+  align-items: flex-end;
+  color: black;
+  font-weight: bold;
 }
+
+.hpFootDiv{
+  color: white;
+  height: 100%;
+}
+
 
 .hpFooterClass {
   display: flex;
@@ -249,7 +280,7 @@ li {
 .hpFooterLink {
   padding: 0px 4px;
   text-decoration: none;
-  color: black;
+  color: hotpink;
 }
 
 .hpFooterLink:visited {
@@ -257,7 +288,21 @@ li {
 }
 
 .hpFooterLink:hover {
-  color: indigo;
+  color: hotpink;
+}
+
+.hpFootLink{
+  padding: 0px 4px;
+  text-decoration: none;
+  color: pink;
+}
+
+.hpFootLink:visited {
+  color: pink;
+}
+
+.hpFootLink:hover {
+  color: pink;
 }
 /* Ending Footer */
  
