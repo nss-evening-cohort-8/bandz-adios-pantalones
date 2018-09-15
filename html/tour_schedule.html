@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body id="ts-body" onload="tsStringBuilder()">
+<body id="ts-body" onload="tsStringBuilder(); setActive()">
     <!-- Beginning NavBar -->
-    <nav>
-        <ul class="hpNavBar">
+    <nav id="nav" onload="setActive()">
+        <ul id ="nav" class="hpNavBar">
             <li><a class="hpNavbarLink" href="../index.html">Home</a></li>
             <li><a class="hpNavbarLink" href="./tour_schedule.html">Tour Schedule</a></li>
             <li><a class="hpNavbarLink" href="./media.html">Media</a></li>

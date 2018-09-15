@@ -267,3 +267,30 @@ const tsStringBuilder = () => {
   printToDom(newString, 'ts-container');
 };
 // End Tour-Schedule \\
+
+// Attempting active navbar
+// let hpNavCont = document.getElementById("nav");
+// let hpNav = hpNavCont.getElementsByClassName("hpNavbarLink");
+
+// let navFunction = () => {
+//   let sheet = document.getElementsByClassName("active");
+//   sheet[0].className = sheet[0].className.replace(" active", "");
+//   if (sheet.length>0){
+//     sheet[0].className = sheet[0].className.replace(" active","");
+//   }
+//   this.className += " active";
+// };
+
+// for (let i=0; i<hpNav.length; i++){
+//   hpNav[i].addEventListener("click",navFunction());
+// }
+
+const setActive = () => {
+  aObj = document.getElementById('nav').getElementsByTagName('a');
+  for(i=0;i<aObj.length;i++) { 
+    if(document.location.href.indexOf(aObj[i].href)>=0) {
+      aObj[i].className='active';
+    }
+  }
+}
+// Ending active navbar
