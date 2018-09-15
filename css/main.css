@@ -72,32 +72,8 @@ img {
     justify-content: space-between;
     padding: 0 175px 0 135px;
     text-align: center;
+    font-family: 'Marcellus SC', serif;
 }
-
-/* .songs1 {
-    border: 1px solid black;
-    padding: 25px 0 0 150px;
-    text-align: left;
-}
-
-.songs2 {
-    border: 1px solid black;
-    text-align: center;
-    padding: 0 0 150px 0;
-}
-
-.songs3 {
-    padding: 25px 0 0 150px;
-    text-align: right;
-} */
-
-/* .media-songs2 {
-
-}
-
-.media-songs3 {
-
-} */
 
 /* End Media Image Gallery and Albums */
 
