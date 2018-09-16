@@ -181,19 +181,37 @@ ul#nav li a.active {
   background-image: url(../images/img_TOUR/Group2.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: 0 30;
+}
+
+#ts-header {
+  display: flex;
+  font-family: 'Marcellus', serif;
+  font-size: 60px;
+  padding-top: 45px;
 }
 
 #ts-container {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  padding-top: 60px;
-  width: 63%;
+  margin-left: 150px;
+  /* padding-top: 60px; */
+  width: 57%;
+  height: 83vh;
 }
 
 .ts-show {
   display: flex;
   border-bottom: 1px solid grey;
+}
+
+#ts-ghost-year {
+  position: absolute;
+  padding: 10px;
+  left: 8;
+  top: inherit;
+  font-size: 58;
+  opacity: 0.2;
 }
 
 .ts-date-numbers {
@@ -208,10 +226,10 @@ ul#nav li a.active {
 }
 
 .ts-date-numbers p:first-of-type {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 .ts-date-numbers p:last-of-type {
-  margin-top: 9px;
+  margin-top: 5px;
 }
 
 .ts-venue p {
@@ -221,30 +239,43 @@ ul#nav li a.active {
 
 .ts-venue p:first-of-type {
   font-weight: bold;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .ts-venue p:last-of-type {
-  margin-top: 9px;
+  margin-top: 5px;
 }
 
 .ts-show-buttons {
   display: flex;
   flex-grow: 2;
   align-self: center;
+  align-items: center;
   justify-content: flex-end;
+  align-content: center;
 }
 
+.ts-show-buttons p {
+  font-size: 20px;
+  font-family: 'Marcellus', serif;
+  margin-right: 35px;
+}
+
+.ts-show-buttons input:disabled {
+  background-color: gray;
+  border: 3px solid black;
+}
 .ts-buy {
   margin-right: 5px;
-  width: 120px;
-  height: 40px;
-  border-radius: 25px 0px 25px 0px;
+  width: 90px;
+  height: 35px;
+  border: 3px solid darkslateblue;
+  border-radius: 0px 10px 10px 10px;
   box-shadow: none;
   background-color: hotpink;
   color: #f7f1f3;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Marcellus', serif;
 }
 .ts-buy:hover {
@@ -253,14 +284,15 @@ ul#nav li a.active {
 
 .ts-vip {
   margin-left: 5px;
-  width: 120px;
-  height: 40px;
-  border-radius: 0px 25px 0px 25px;
+  width: 90px;
+  height: 35px;
+  border: 3px solid darkslateblue;
+  border-radius: 10px 10px 0px 10px;
   box-shadow: none;
   background-color: hotpink;
   color: #f7f1f3;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Marcellus', serif;
 }
 
