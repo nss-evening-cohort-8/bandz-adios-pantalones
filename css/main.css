@@ -339,6 +339,13 @@ li {
   font-family: 'Marcellus', serif;
 }
 
+.merch-header {
+  padding-top: 80px;
+  padding-left: 50px;
+  text-shadow: 10px 25px 2px darkslateblue;
+  color: hotpink;
+}
+
 .merch-items {
   display: flex;
   flex-wrap: wrap;
@@ -368,9 +375,18 @@ li {
 }
 
 .merch-button {
+  cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 15px;
+  border: 2px solid darkslateblue;
+  outline: none;
   background-color: hotpink;
   color: #f7f1f3;
+  transition: .5s;
+}
+
+.merch-button:hover {
+  background-color: darkslateblue;
+  border: 2px solid hotpink;
 }
