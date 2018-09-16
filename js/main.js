@@ -127,7 +127,7 @@ function plusDivs(n) {
   showDivs((slideIndex += n));
 }
 /// End Media Image Gallery ///
-
+/// Start Band Favorite Songs ///
 function bandBioStringBuilder(bio_name) {
   newString = '';
   for (let i = 0; i < ourBios.length; i++) {
@@ -171,7 +171,7 @@ function bio_func() {
     bandBioStringBuilder('Waybo');
   });
 }
-
+/// End Band Favorite Songs ///
 /// Merch - Merchandise Item Object ///
 let merch_data = {
   items: [
