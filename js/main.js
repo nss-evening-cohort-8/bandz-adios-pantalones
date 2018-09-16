@@ -56,6 +56,7 @@ const tourScheduleDates = [
     city: 'Pulaski',
     state: 'TN',
     venue: 'Pulaski Lions Club',
+    map: 'https://binged.it/2CZBNGX',
     isSoldOutGen: true,
     isSouldOutVip: true
   },
@@ -65,15 +66,17 @@ const tourScheduleDates = [
     city: 'Scratch Ankle',
     state: 'AL',
     venue: "Jim's Waterin' Hole",
+    map: 'https://binged.it/2D0MZmx',
     isSoldOutGen: false,
     isSouldOutVip: true
   },
   {
     // Fri Aug 17 2018 00:00:00 GMT-0500 (Central Daylight Time)
     date: 1534482000000,
-    city: 'Flippin',
+    city: 'Flippen',
     state: 'GA',
     venue: 'Peach Pot',
+    map: 'https://binged.it/2Qzq3gP',
     isSoldOutGen: false,
     isSouldOutVip: false
   },
@@ -83,6 +86,7 @@ const tourScheduleDates = [
     city: 'Coward',
     state: 'SC',
     venue: "Surf n' Turf Karaoke Bar",
+    map: 'https://binged.it/2D0Oy3T',
     isSoldOutGen: true,
     isSouldOutVip: false
   },
@@ -92,6 +96,7 @@ const tourScheduleDates = [
     city: 'Whynot',
     state: 'NC',
     venue: "Hurricane's Eye Saloon",
+    map: 'https://binged.it/2QzpkfO',
     isSoldOutGen: true,
     isSouldOutVip: true
   },
@@ -101,6 +106,7 @@ const tourScheduleDates = [
     city: 'Booger Hole',
     state: 'WV',
     venue: "You Pickem' We Serve 'em",
+    map: 'https://binged.it/2Qt4fnj',
     isSoldOutGen: false,
     isSouldOutVip: false
   }
@@ -268,6 +274,7 @@ const tsStringBuilder = () => {
     let city = tourScheduleDates[i].city;
     let state = tourScheduleDates[i].state;
     let venue = tourScheduleDates[i].venue;
+    let map = tourScheduleDates[i].map;
     let genTicketSO = tourScheduleDates[i].isSoldOutGen;
     let vipTicketSO = tourScheduleDates[i].isSouldOutVip;
     newString += `<div class="ts-show">`;
@@ -277,15 +284,15 @@ const tsStringBuilder = () => {
     newString += `<p>${day}</p>`;
     newString += `</div>`;
     newString += `<div class="ts-venue">`;
-    newString += `<p>${city}, ${state}</p>`;
+    newString += `<p><a href="${map}" target="_blank">${city}, ${state}</a></p>`;
     newString += `<p>${venue}</p>`;
     newString += `</div>`;
     newString += `<div class="ts-show-buttons">`;
     newString += `<p>Tickets:</P>`;
-    newString += `<input class="ts-buy" type="button" value="${
+    newString += `<input class="ts-buy" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
       genTicketSO ? 'Sold Out!' : 'Buy'
     }" ${genTicketSO ? 'disabled' : ''}>`;
-    newString += `<input class="ts-vip" type="button" value="${
+    newString += `<input class="ts-vip" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
       vipTicketSO ? 'Sold Out!' : 'V.I.P'
     }" ${vipTicketSO ? 'disabled' : ''}>`;
     newString += `</div>`;
