@@ -215,7 +215,7 @@ let merch_data = {
       name: 'Dulled Razor',
       picture: '../images/img_MERCH/razor.jpg',
       description:
-        'These are the actual razors the band uses to shave their legs!  Each razor represents months of daily shaving.  Great for children!',
+        'These are the actual razors the band uses to shave their faces, chests, and legs!  Each razor represents months of daily shaving.  Great for children!',
       price: '₩16000 / $16.99',
       buy: 'BUY NOW!!'
     },
@@ -231,7 +231,7 @@ let merch_data = {
       name: 'Community Toothbrush',
       picture: '../images/img_MERCH/tooth.jpg',
       description:
-        'We take out teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
+        'We take our teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
       price: '₩29000 / $29.99',
       buy: 'BUY NOW!!'
     }
@@ -251,9 +251,9 @@ const merch_string_builder = () => {
     }" alt="5MEN? Merchandise"`;
     new_string += `<p class="merch-p">${merch_data.items[i].description}</p>`;
     new_string += `<h3 class="merch-price">${merch_data.items[i].price}</h3>`;
-    new_string += `<button class="merch-button"><h2>${
+    new_string += `<a href="https://giphy.com/gifs/computer-baboon-freezes-McmEgVHMekWQ/fullscreen" target="blank"><button class="merch-button" ><h2>${
       merch_data.items[i].buy
-    }</h2></button>`;
+    }</h2></button></a>`;
     new_string += `</div>`;
   }
   printToDom(new_string, 'merch-store');

@@ -364,11 +364,18 @@ li {
 }
 /* Ending Footer */
 
+/* Merchandise Page CSS */
 #merch-store {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
   font-family: 'Marcellus', serif;
+}
+
+.merch-header {
+  padding-top: 80px;
+  padding-left: 50px;
+  text-shadow: 10px 25px 2px darkslateblue;
 }
 
 .merch-items {
@@ -393,6 +400,8 @@ li {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+  border: 2px outset darkslateblue;
+  border-radius: 2px;
 }
 
 .merch-price {
@@ -400,9 +409,18 @@ li {
 }
 
 .merch-button {
+  cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 15px;
+  border: 2px solid darkslateblue;
+  outline: none;
   background-color: hotpink;
   color: #f7f1f3;
+  transition: .5s;
+}
+
+.merch-button:hover {
+  background-color: darkslateblue;
+  border: 2px solid hotpink;
 }
