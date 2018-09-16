@@ -13,6 +13,7 @@ img {
 .hpBody {
   background-image: url(/images/img_HOME/home1.jpg);
   background-size: 97%;
+  background-repeat: no-repeat;
 }
 /* Beginning NavBar */
 .hpNavBar {
