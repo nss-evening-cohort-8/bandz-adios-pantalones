@@ -1,6 +1,9 @@
 body {
   background-color: #f7f1f3;
   font-family: 'Marcellus', serif;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 img {
@@ -14,6 +17,7 @@ img {
   background-image: url(/images/img_HOME/home1.jpg);
   background-size: 97%;
   background-repeat: no-repeat;
+
 }
 /* Beginning NavBar */
 .hpNavBar {
@@ -24,8 +28,10 @@ img {
   background-color: black;
   position: fixed;
   overflow: hidden;
-  width: 97%;
+  width: 100%;
   z-index: 3000;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .hpNavbarLink {
@@ -69,7 +75,7 @@ ul#nav li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 0px 100px;
+  padding: 70px 0px 100px;
 }
 
 .media-button {
@@ -113,6 +119,7 @@ ul#nav li a.active {
   margin-right: 50px;
   margin-left: 20px;
   /* border: 1px solid black; */
+  padding-top: 30px;
 }
 
 .div-waybo {
@@ -188,7 +195,8 @@ ul#nav li a.active {
   display: flex;
   font-family: 'Marcellus', serif;
   font-size: 60px;
-  padding-top: 45px;
+  padding-top: 50px;
+  padding-left: 10px;
 }
 
 #ts-container {
@@ -368,7 +376,7 @@ li {
 #merch-store {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 60px;
   font-family: 'Marcellus', serif;
 }
 
