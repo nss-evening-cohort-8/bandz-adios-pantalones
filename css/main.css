@@ -208,9 +208,9 @@ ul#nav li a.active {
 #ts-ghost-year {
   position: absolute;
   padding: 10px;
-  left: 8;
+  left: 5;
   top: inherit;
-  font-size: 58;
+  font-size: 50px;
   opacity: 0.2;
 }
 
@@ -267,7 +267,7 @@ ul#nav li a.active {
 }
 .ts-buy {
   margin-right: 5px;
-  width: 90px;
+  width: 95px;
   height: 35px;
   border: 3px solid darkslateblue;
   border-radius: 0px 10px 10px 10px;
@@ -284,7 +284,7 @@ ul#nav li a.active {
 
 .ts-vip {
   margin-left: 5px;
-  width: 90px;
+  width: 95px;
   height: 35px;
   border: 3px solid darkslateblue;
   border-radius: 10px 10px 0px 10px;
@@ -418,7 +418,7 @@ li {
   outline: none;
   background-color: hotpink;
   color: #f7f1f3;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .merch-button:hover {
