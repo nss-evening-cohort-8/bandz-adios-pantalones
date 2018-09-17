@@ -220,7 +220,7 @@ ul#nav li a.active {
 #ts-ghost-year {
   position: absolute;
   padding: 10px;
-  left: 5;
+  left: 2;
   top: inherit;
   font-size: 50px;
   opacity: 0.2;
