@@ -56,7 +56,9 @@ const tourScheduleDates = [
     city: 'Pulaski',
     state: 'TN',
     venue: 'Pulaski Lions Club',
-    isSoldOut: 'true'
+    map: 'https://binged.it/2CZBNGX',
+    isSoldOutGen: true,
+    isSouldOutVip: true
   },
   {
     // Fri Aug 31 2018 00:00:00 GMT-0500 (Central Daylight Time)
@@ -64,15 +66,19 @@ const tourScheduleDates = [
     city: 'Scratch Ankle',
     state: 'AL',
     venue: "Jim's Waterin' Hole",
-    isSoldOut: 'false'
+    map: 'https://binged.it/2D0MZmx',
+    isSoldOutGen: false,
+    isSouldOutVip: true
   },
   {
     // Fri Aug 17 2018 00:00:00 GMT-0500 (Central Daylight Time)
     date: 1534482000000,
-    city: 'Flippin',
+    city: 'Flippen',
     state: 'GA',
     venue: 'Peach Pot',
-    isSoldOut: 'false'
+    map: 'https://binged.it/2Qzq3gP',
+    isSoldOutGen: false,
+    isSouldOutVip: false
   },
   {
     // Sat Jul 28 2018 00:00:00 GMT-0500 (Central Daylight Time)
@@ -80,7 +86,9 @@ const tourScheduleDates = [
     city: 'Coward',
     state: 'SC',
     venue: "Surf n' Turf Karaoke Bar",
-    isSoldOut: 'true'
+    map: 'https://binged.it/2D0Oy3T',
+    isSoldOutGen: true,
+    isSouldOutVip: false
   },
   {
     // Sat Jul 07 2018 00:00:00 GMT-0500 (Central Daylight Time)
@@ -88,7 +96,9 @@ const tourScheduleDates = [
     city: 'Whynot',
     state: 'NC',
     venue: "Hurricane's Eye Saloon",
-    isSoldOut: 'false'
+    map: 'https://binged.it/2QzpkfO',
+    isSoldOutGen: true,
+    isSouldOutVip: true
   },
   {
     // Sun Jun 24 2018 00:00:00 GMT-0500 (Central Daylight Time)
@@ -96,7 +106,9 @@ const tourScheduleDates = [
     city: 'Booger Hole',
     state: 'WV',
     venue: "You Pickem' We Serve 'em",
-    isSoldOut: 'false'
+    map: 'https://binged.it/2Qt4fnj',
+    isSoldOutGen: false,
+    isSouldOutVip: false
   }
 ];
 
@@ -203,7 +215,7 @@ let merch_data = {
       name: 'Dulled Razor',
       picture: '../images/img_MERCH/razor.jpg',
       description:
-        'These are the actual razors the band uses to shave their legs!  Each razor represents months of daily shaving.  Great for children!',
+        'These are the actual razors the band uses to shave their faces, chests, and legs!  Each razor represents months of daily shaving.  Great for children!',
       price: '₩16000 / $16.99',
       buy: 'BUY NOW!!'
     },
@@ -219,7 +231,7 @@ let merch_data = {
       name: 'Community Toothbrush',
       picture: '../images/img_MERCH/tooth.jpg',
       description:
-        'We take out teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
+        'We take our teeth hygiene very seriously.  So should you!  Our advice:  Don’t use an ammature toothbrush.   Use our toothbrush.  It has plenty of experience. ',
       price: '₩29000 / $29.99',
       buy: 'BUY NOW!!'
     }
@@ -239,9 +251,9 @@ const merch_string_builder = () => {
     }" alt="5MEN? Merchandise"`;
     new_string += `<p class="merch-p">${merch_data.items[i].description}</p>`;
     new_string += `<h3 class="merch-price">${merch_data.items[i].price}</h3>`;
-    new_string += `<button class="merch-button"><h2>${
+    new_string += `<a href="https://giphy.com/gifs/computer-baboon-freezes-McmEgVHMekWQ/fullscreen" target="blank"><button class="merch-button" ><h2>${
       merch_data.items[i].buy
-    }</h2></button>`;
+    }</h2></button></a>`;
     new_string += `</div>`;
   }
   printToDom(new_string, 'merch-store');
@@ -258,21 +270,31 @@ const tsStringBuilder = () => {
       month: 'short'
     });
     let day = tourDate.getDate();
+    let year = tourDate.getFullYear();
     let city = tourScheduleDates[i].city;
     let state = tourScheduleDates[i].state;
     let venue = tourScheduleDates[i].venue;
+    let map = tourScheduleDates[i].map;
+    let genTicketSO = tourScheduleDates[i].isSoldOutGen;
+    let vipTicketSO = tourScheduleDates[i].isSouldOutVip;
     newString += `<div class="ts-show">`;
+    i === 0 ? (newString += `<span id="ts-ghost-year">${year}</span>`) : '';
     newString += `<div class="ts-date-numbers">`;
     newString += `<p>${month}</p>`;
     newString += `<p>${day}</p>`;
     newString += `</div>`;
     newString += `<div class="ts-venue">`;
-    newString += `<p>${city}, ${state}</p>`;
+    newString += `<p><a href="${map}" target="_blank">${city}, ${state}</a></p>`;
     newString += `<p>${venue}</p>`;
     newString += `</div>`;
     newString += `<div class="ts-show-buttons">`;
-    newString += `<input class="ts-buy" type="button" value="Buy Tickets">`;
-    newString += `<input class="ts-vip" type="button" value="V.I.P. Tickets">`;
+    newString += `<p>Tickets:</P>`;
+    newString += `<input class="ts-buy" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
+      genTicketSO ? 'Sold Out!' : 'Buy'
+    }" ${genTicketSO ? 'disabled' : ''}>`;
+    newString += `<input class="ts-vip" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
+      vipTicketSO ? 'Sold Out!' : 'V.I.P'
+    }" ${vipTicketSO ? 'disabled' : ''}>`;
     newString += `</div>`;
     newString += `</div>`;
   }
