@@ -120,8 +120,11 @@ const printToDom = (stringToPrint, elementId) => {
 /// Media - Image Gallery ///
 var slideIndex = 1;
 
+function plusDivs(n) {
+  showDivs((slideIndex += n));
+};
+
 function showDivs() {
-  // var slideIndex = 1;
   var newImages = document.getElementsByClassName('media-images');
   if (slideIndex > newImages.length) {
     slideIndex = 1;
@@ -133,12 +136,10 @@ function showDivs() {
     newImages[i].style.display = 'none';
   }
   newImages[slideIndex - 1].style.display = 'block';
-}
+};
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
 /// End Media Image Gallery ///
+
 /// Start Band Favorite Songs ///
 function bandBioStringBuilder(bio_name) {
   newString = '';
