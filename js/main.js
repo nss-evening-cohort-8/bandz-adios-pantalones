@@ -290,7 +290,7 @@ const tsStringBuilder = () => {
     newString += `<div class="ts-show-buttons">`;
     newString += `<p>Tickets:</P>`;
     newString += `<input class="ts-buy" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
-      genTicketSO ? 'Sold Out!' : 'Buy'
+      genTicketSO ? 'Sold Out!' : 'Purchase'
     }" ${genTicketSO ? 'disabled' : ''}>`;
     newString += `<input class="ts-vip" type="button" onclick="window.open('https://youtu.be/dQw4w9WgXcQ')" value="${
       vipTicketSO ? 'Sold Out!' : 'V.I.P'
