@@ -97,11 +97,15 @@ ul#nav li a.active {
   justify-content: center;
 }
 
+.discography {
+  text-align: center;
+}
+
 .songs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 175px 0 135px;
+  padding: 0 50px 0 65px;
   text-align: center;
   font-family: 'Marcellus SC', serif;
 }
