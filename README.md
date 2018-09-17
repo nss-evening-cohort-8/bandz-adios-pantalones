@@ -4,7 +4,11 @@ This project helps us handle merge conflicts while practicing HTML, CSS, and JS.
 
 ## Screenshots
 
-- Screenshots to come when finalized
+![homepage screenshot](./images/img_Screenshots/Homepage1.PNG)
+![TS2 screenshot](./images/img_Screenshots/TS2.PNG)
+![M3 screenshot](./images/img_Screenshots/M3.PNG)
+![M4 screenshot](./images/img_Screenshots/M4.PNG)
+![B5 screenshot](./images/img_Screenshots/B5.PNG)
 
 ## How to run this project
 
